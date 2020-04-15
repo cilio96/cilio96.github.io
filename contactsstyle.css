@@ -1,0 +1,235 @@
+/*@mixin for-desktop-up*/ 
+ @media  screen and (min-width: 1000px) {   
+
+     html, body{
+         margin: 0; padding: 0; border: 0; box-sizing: border-box; 
+     }     
+     
+.container {
+  
+    min-height: 50vh; 
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+     .topleft{
+         background-color: #0B0930; 
+         width: 50%; 
+         max-height: 50%; 
+         position: relative; 
+         
+     }
+     
+       .topright{
+         background-color: #0B0930; 
+         width: 50%; 
+         max-height: 50%;
+     }
+    
+        .downleft{
+         background-color: #0B0930; 
+         width: 50%; 
+         max-height: 50%; 
+     }
+     
+     .downright{
+        background-color: #0B0930; 
+         width: 50%; 
+         max-height: 50%; 
+     }
+     
+     .bottom{
+         background-color: #0B0930; 
+         width: 100%; 
+         
+     }
+     
+     h1{
+         
+         font-family: "Avengero"; 
+         
+         font-size: 30px;
+          
+         color: white;
+         
+         width: 100%; 
+         text-align: center; 
+         
+     }
+     
+     h2{
+        
+        font-family: "Avengero"; 
+         
+         
+         font-size: 43px;
+         
+         color: white;
+         
+         width: 100%; 
+         text-align: center; 
+     }
+
+     i1{
+          
+        font-size: 300%; 
+        padding-bottom: 2vw; 
+        color: white; 
+     
+        margin-left: 20.7vw; 
+     }
+     
+        i2{
+         
+        font-size: 300%; 
+        padding-bottom: 2vw; 
+        color: white; 
+         
+        padding-left: 3vw;  
+     }
+     
+     i3{
+        
+         font-size: 300%; 
+       padding-bottom: 2vw; 
+        color: white; 
+       
+        padding-left: 3vw; 
+     }
+     
+     shitpost{
+        font-size: 253px; 
+        width: 100%; 
+         padding-top: 19px; 
+         padding-bottom: 24px; 
+        text-align: center; 
+        color: white; 
+     }
+     
+     footer{
+        font-size: 12px; 
+        margin: 0; 
+        font-family: Avengero; 
+        position: fixed;
+        width: 100%; 
+         
+        bottom: 8px; 
+        left: 8px; 
+    }  
+}
+/*end desktop normal size*/
+
+/*mobile phone vertical*/
+
+@media screen and (max-width: 999px) {   
+
+     html, body{
+         margin: 0; padding: 0; border: 0; box-sizing: border-box; 
+     }     
+     
+.container {
+  
+    max-width: 100%; 
+    
+    display: flex;
+    flex-direction: column-reverse; 
+    
+}
+
+     .topleft{
+         background-color: #0B0930; 
+         width: 100%; 
+         max-height: 100%; 
+         position: relative; 
+         
+     }
+     
+       .topright{
+         background-color: #0B0930; 
+         width: 100%; 
+         max-height: 100%;
+     }
+    
+        .downleft{
+         background-color: #0B0930; 
+         width: 100%; 
+         max-height: 100%; 
+     }
+     
+     .downright{
+        background-color: #0B0930; 
+         width: 100%; 
+         max-height: 100%; 
+     }
+     
+     .bottom{
+         background-color: #0B0930; 
+         width: 100%; 
+         
+     }
+     
+     h1{
+         
+         font-family: "Avengero"; 
+         
+         font-size: 48px;
+          
+         color: white;
+         
+         width: 100%; 
+         text-align: center; 
+         
+     }
+     
+     h2{
+        
+        font-family: "Avengero"; 
+         
+         
+         font-size: 74px;
+         
+         color: white;
+         
+         width: 100%; 
+         text-align: center; 
+     }
+
+     i1{
+          
+        font-size: 400%; 
+        padding-bottom: 2vw; 
+        color: white; 
+     
+        margin-left: 43vw; 
+     }
+     
+        i2{
+         
+        font-size: 400%; 
+        padding-bottom: 2vw; 
+        color: white; 
+         
+        padding-left: 3vw;  
+     }
+     
+     
+     shitpost{
+        font-size: 320px; 
+        width: 100%; 
+         padding-top: 19px; 
+         padding-bottom: 24px; 
+        text-align: center; 
+        color: white; 
+     }
+     
+     footer{
+        font-size: 30px; 
+        margin: 0; 
+        font-family: Avengero; 
+        position: fixed;
+        width: 100%; 
+         
+        bottom: 8px; 
+        left: 8px; 
+    }  
+}
