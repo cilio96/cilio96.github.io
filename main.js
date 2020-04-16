@@ -32,7 +32,7 @@ var x = setInterval(function() {
 
 var width = document.body.clientWidth; 
 //display random images 
-if(width > 600){
+if(width > 1024){
 var imageArray = ['img/contedesk.jpg','img/dimaio.jpg', 'img/salvinidesk.jpg', 'img/mattarelladesk.jpg', 'img/melonidesk.jpg'],
     selectImg = imageArray[Math.floor(Math.random() * imageArray.length)];
     document.body.style.backgroundImage = 'url(' + selectImg + ')';
