@@ -25,6 +25,8 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("counter").innerHTML = "Congratulazioni! Ora (non) puoi uscire.";
+    setTimeout( function(){
+    window.location.href = "https://www.youtube.com/watch?v=oyFQVZ2h0V8";}, 4500); 
   }
 }, 1000);
 
@@ -36,7 +38,7 @@ var imageArray = ['img/contedesk.jpg','img/dimaio.jpg', 'img/salvinidesk.jpg', '
     document.body.style.backgroundImage = 'url(' + selectImg + ')';
 }
 else {
-    imageArray = ['img/dimaiotel.jpg', 'img/contetel.jpg', 'img/salvinitel.jpg', 'img/melonitel.jpg'], 
+    imageArray = ['img/dimaiotel.jpg', 'img/contetel.jpg', 'img/salvinitel.jpg', 'img/melonitel.jpg', 'img/mattarellatel.jpg'], 
     selectImg = imageArray[Math.floor(Math.random() * imageArray.length)]; 
      document.body.style.backgroundImage = 'url(' + selectImg + ')';
 }
