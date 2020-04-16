@@ -33,12 +33,12 @@ var x = setInterval(function() {
 var width = document.body.clientWidth; 
 //display random images 
 if(width > 1024){
-var imageArray = ['img/contedesk.jpg','img/dimaio.jpg', 'img/salvinidesk.jpg', 'img/mattarelladesk.jpg', 'img/melonidesk.jpg'],
+var imageArray = ['img/contedesk.jpg','img/dimaio.jpg', 'img/salvinidesk.jpg', 'img/mattarelladesk.jpg', 'img/melonidesk.jpg', 'img/zingarettidesk.jpg'],
     selectImg = imageArray[Math.floor(Math.random() * imageArray.length)];
     document.body.style.backgroundImage = 'url(' + selectImg + ')';
 }
 else {
-    imageArray = ['img/dimaiotel.jpg', 'img/contetel.jpg', 'img/salvinitel.jpg', 'img/melonitel.jpg', 'img/mattarellatel.jpg'], 
+    imageArray = ['img/dimaiotel.jpg', 'img/contetel.jpg', 'img/salvinitel.jpg', 'img/melonitel.jpg', 'img/mattarellatel.jpg', 'img/zingarettitel.jpg'], 
     selectImg = imageArray[Math.floor(Math.random() * imageArray.length)]; 
      document.body.style.backgroundImage = 'url(' + selectImg + ')';
 }
