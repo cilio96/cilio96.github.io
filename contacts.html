@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
     <meta charset="UTF-8">
      <link rel="stylesheet" href="contactsstyle.css">
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
@@ -37,6 +38,29 @@
  </style>
 </head>
 <body>
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#383b75"
+    },
+    "button": {
+      "background": "transparent",
+      "text": "#f1d600",
+      "border": "#f1d600"
+    }
+  },
+  "position": "top",
+  "content": {
+    "message": "Questo sito web utilizza i cookie\n",
+    "dismiss": "Accetta i cookie",
+    "deny": "Rifiuta i cookie",
+    "link": "Informazioni"
+  }
+});
+</script>
+
 <div class="container">
     
     <div class="topleft">

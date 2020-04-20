@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163773711-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-163773711-1', { 'anonymize_ip': true });
 </script>
 
@@ -42,6 +44,30 @@
 </head>
 
  <body>
+   
+   <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#383b75"
+    },
+    "button": {
+      "background": "transparent",
+      "text": "#f1d600",
+      "border": "#f1d600"
+    }
+  },
+  "position": "top",
+  "content": {
+    "message": "Questo sito web utilizza i cookie\n",
+    "dismiss": "Accetta i cookie",
+    "deny": "Rifiuta i cookie",
+    "link": "Informazioni"
+  }
+});
+</script>
+   
     <div class="content">
        <div id="myPicture"></div>
        
