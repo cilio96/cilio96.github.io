@@ -8,7 +8,7 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-163773711-1');
+  gtag('config', 'UA-163773711-1', { 'anonymize_ip': true });
 </script>
 
 
@@ -48,13 +48,19 @@
           <!---  <iframe id="myFrame" src="https://www.youtube.com/embed/TBOiDrXL7N8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>--->
        
-       
+       <button onclick="playAnimation()">Riproduci animazione</button>
+       <audio id="audio">
+          <!--<source src="horse.ogg" type="audio/ogg">--> 
+          <source src="AvengersTheme.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+       </div>
         <div class="bottom">
              <h2>FASE 2</h2>
             <div id="counter"></div>
         </div>
        
-    </div>
+    
     <footer> 
         <a href="https://cilio96.github.io/contacts.html">Contatti</a>
         <a href="https://www.iubenda.com/privacy-policy/12534126/full-legal">Policy</a>
