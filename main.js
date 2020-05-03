@@ -24,6 +24,7 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("counter").innerHTML = "Congratulazioni! Ora (non) puoi uscire.";
+    document.getElementById("fase2").style.opacity = "0"; 
     setTimeout( function(){
     window.location.href = "https://www.youtube.com/watch?v=oyFQVZ2h0V8";}, 4500); 
   }
