@@ -9,7 +9,7 @@ var x = setInterval(function() {
   var now = new Date().getTime();
     
   // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+  var distance = now - countDownDate;
     
   // Time calculations for days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24)); 
@@ -21,14 +21,14 @@ var x = setInterval(function() {
   + minutes + "m:" + seconds + "s";
     
   // If the count down is over, write some text 
-  if (distance < 0) {
+/* if (distance < 0) {
     clearInterval(x);
     document.getElementById("counter").innerHTML = "Congratulazioni! Ora (non) puoi uscire.";
     document.getElementById("fase2").style.opacity = "0"; 
     setTimeout( function(){
     window.location.href = "https://www.youtube.com/watch?v=oyFQVZ2h0V8";}, 4500); 
-  }
-}, 1000);
+  } */
+}, 1000); 
 
 
 var width = document.body.clientWidth; 
@@ -78,7 +78,7 @@ else{
     iframe.style.visibility = "hidden"; 
 }*/
 
- playAnimation = function () {
+/* playAnimation = function () {
     function changeImage() {
         i = Math.floor(Math.random() * imageArray.length); 
         document.body.style.backgroundImage = 'url("' + imageArray[i] + '")';
@@ -92,7 +92,7 @@ else{
      }
      else 
          audio.pause();  
-     }
+     }*/
 
 
 
