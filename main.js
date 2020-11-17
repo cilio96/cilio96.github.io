@@ -19,15 +19,6 @@ var x = setInterval(function() {
   // Output the result in an element with id="demo"
   document.getElementById("counter").innerHTML = days + "g:" + hours + "h:"
   + minutes + "m:" + seconds + "s";
-    
-  // If the count down is over, write some text 
-/* if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("counter").innerHTML = "Congratulazioni! Ora (non) puoi uscire.";
-    document.getElementById("fase2").style.opacity = "0"; 
-    setTimeout( function(){
-    window.location.href = "https://www.youtube.com/watch?v=oyFQVZ2h0V8";}, 4500); 
-  } */
 }, 1000); 
 
 
@@ -43,60 +34,3 @@ else {
     selectImg = imageArray[Math.floor(Math.random() * imageArray.length)]; 
      document.body.style.backgroundImage = 'url(' + selectImg + ')';
 }
-
-/*//gestione video 
-if(width > 1024){
-var iframe = document.getElementById("myFrame");
-
-iframe.style.position = 'absolute';
-iframe.style.top='20%'; 
-iframe.style.left='5%'; 
-    if(selectImg.localeCompare('img/salvinidesk.jpg') == 0){
-    iframe.style.position = 'fixed';
-    iframe.style.width = "360px"; 
-    iframe.style.height = "260px"; 
-    iframe.style.top='18%'; 
-    iframe.style.left='35%'; 
-    }
-    else if(selectImg.localeCompare('img/contedesk.jpg') == 0 || selectImg.localeCompare('img/dimaio.jpg') == 0){
-    iframe.style.position = 'fixed';
-    iframe.style.width = "360px"; 
-    iframe.style.height = "260px"; 
-    iframe.style.top='28%'; 
-    iframe.style.left='5%'; 
-    }
-    else if(selectImg.localeCompare('img/mattarelladesk.jpg') == 0 || selectImg.localeCompare('img/melonidesk.jpg') == 0 || selectImg.localeCompare('img/zingarettidesk.jpg') == 0){
-    iframe.style.position = 'fixed';
-    iframe.style.width = "360px"; 
-    iframe.style.height = "260px"; 
-    iframe.style.top='30%'; 
-    iframe.style.left='5%'; 
-    }
-}
-else{
-    var iframe = document.getElementById("myFrame");
-    iframe.style.visibility = "hidden"; 
-}*/
-
-/* playAnimation = function () {
-    function changeImage() {
-        i = Math.floor(Math.random() * imageArray.length); 
-        document.body.style.backgroundImage = 'url("' + imageArray[i] + '")';
-    }
-    window.setInterval(changeImage, 5000);
-     
-    var audio = document.getElementById("audio"); 
-    
-     if(audio.paused){
-        audio.play();   
-     }
-     else 
-         audio.pause();  
-     }*/
-
-
-
-
-
-
-
